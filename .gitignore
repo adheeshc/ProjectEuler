@@ -30,8 +30,14 @@
 *.exe
 *.out
 *.app
-*
-!*.cpp
+
+# Build directory
+build/
+
+# Ignore compiled executables in cpp_solutions (files without extensions)
+# Keep only .cpp source files
+cpp_solutions/*
+!cpp_solutions/*.cpp
 
 #vscode
 *.vscode
